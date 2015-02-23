@@ -1,0 +1,76 @@
+/* ----- Form styles ----- */
+
+$form-popup-bg-color:  rgb(197, 197, 197);
+$form-popup-border-color: rgb(248, 168, 66);
+
+.form-items-container {
+	overflow: hidden;
+	width: 660px;
+}
+
+.helpIcon {
+	position:relative;
+	float: left;
+	height: 20px;
+	width: 20px;
+	margin: 4px 0 0 4px;
+	background-color: $form-popup-bg-color;
+	border-radius: 50%;
+	text-align:center;
+	color: white;
+	font-weight: bold;
+	cursor: help;
+}
+
+.helpTextContainer {
+	display: none;
+	position: absolute;
+	max-width: 300px;
+	background-color: $form-popup-bg-color;
+	border: 2px solid $form-popup-border-color;
+	padding: 10px;
+	z-index: 1;
+}
+
+.inputWrapper {
+	float: left;
+}
+
+.labelWrapper {
+	float: left;
+}
+
+.form-item {
+
+	float: left;
+	width: 100%;
+    margin-bottom: 5px;
+
+    label {
+        display: block;
+        margin-right: 10px;
+        margin-top: 3px;
+        width: 120px;
+        color: #444;
+        font-size: 14px;
+    }
+    
+}
+
+.form-item-button {
+	float: left;
+	padding: 4px;
+    margin-bottom: 5px;
+}
+
+.form-desc {
+    color: #444;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.required-footnote {
+    font-size: 10px;
+    color: #F46700;
+    font-style: italic;
+}

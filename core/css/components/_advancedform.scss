@@ -1,0 +1,172 @@
+/* ----- AdvancedForm styles ----- */
+
+.advance-form-container {
+
+	$form-popup-bg-color:  rgb(197, 197, 197);
+	$form-popup-border-color: rgb(248, 168, 66);
+
+	position: relative;
+	input, a {outline: none;}
+	
+	.form-desc {
+		float: left;
+		width: 100%;
+		margin-bottom: 5px;
+		display: none;
+	}
+	
+	.advance-form-item-container {
+		float: left;
+	}
+	
+	.required-footnote-container {
+		float: left;
+	    font-size: 10px;
+	    color: #F46700;
+	    font-style: italic;
+	}
+	
+	.advanceFormItem {
+		float: left;
+		width: 100%;
+		margin-bottom: 5px;
+		
+	}
+	
+	.inputField-view-container {
+		width: 100%;
+	}
+	
+	.label-container {
+		float: left;
+		
+		label {
+			display: block;
+			margin-right: 10px;
+			margin-top: 3px;
+			width: 120px;
+			color: #444;
+			font-size: 14px;
+		}
+	}
+	.field-container {
+		float: left;
+		
+		input {
+			padding: 3px;
+			border: 1px solid gray;
+			border-radius: 3px;
+		}
+	}
+	
+	.button-view-container {
+		
+		width: auto;
+		margin-right: 5px;
+
+		button {
+			background-color: #222244;
+			color: white;
+			border: 0;
+			border-radius: 3px;
+			padding: 8px 12px 8px 12px;
+			font-size: 12px;
+			margin-top: 10px;
+		}
+	}
+	
+	.dropdown-view-container {
+		width: 100%;
+				
+		.dropdown-container {
+			float: left;
+		}
+	}
+	
+	.slider-input-container {
+		width: 100%;
+		
+		input {
+			width: 80px;
+		}
+		
+		label {
+			min-width: 120px;
+			width: auto;
+		}
+		
+		.slider-bar {
+			height:3px;
+			width: 200px;
+		}
+		
+		.input-container {
+			float: left;
+		}
+		
+		.slider-container {
+			float: left;
+			margin-right: 15px;
+			padding: 10px 0 10px 0;
+		}
+		
+		.ui-slider-handle {
+			border-radius: 50%;	
+			margin-top: -5px;
+		}
+		
+	}
+	
+	.dateField-view-container {
+		width: 100%;
+	}
+	
+	.checkBox-view-container {
+		width: 100%;
+				
+		.field-container {
+			font-size: 13px;
+		}
+		
+		input {
+			border: none;
+		}
+	}
+
+	.radioButton-view-container {
+		width: 100%;
+		
+		.field-container {
+			font-size: 13px;
+		}
+			
+		input {
+			border: none;
+		}
+	}
+	
+	.helpIcon {
+		position:relative;
+		float: left;
+		height: 20px;
+		width: 20px;
+		margin: 4px 0 0 4px;
+		background-color: $form-popup-bg-color;
+		border-radius: 50%;
+		text-align:center;
+		color: white;
+		font-weight: bold;
+		cursor: help;
+	}
+	
+	.helpTextContainer {
+		display: none;
+		position: absolute;
+		max-width: 300px;
+		background-color: $form-popup-bg-color;
+		border: 2px solid $form-popup-border-color;
+		padding: 10px;
+		z-index: 1;
+	}
+	
+}

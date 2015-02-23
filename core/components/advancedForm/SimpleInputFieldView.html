@@ -1,0 +1,13 @@
+<div class="inputField-view-container advanceFormItem">
+	<div class="label-container">
+		<label for="<%=label%>"><%=label%>
+		<%	if (required == true) { %>
+			<span class="required-footnote">*</span>
+		<% } %>
+		</label>
+	</div>
+	<div class="field-container">
+		<input type="<%=type%>" name="<%=label%>" value="<%=value%>"/>
+	</div>
+	
+</div>

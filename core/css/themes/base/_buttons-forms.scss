@@ -1,0 +1,43 @@
+$select-height: 1.2rem;
+
+select {
+	border: none;
+	background-color: $background;
+	-webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    height: $select-height;
+    padding-left: $select-height/2;
+    padding-right: $select-height;
+    @include media($Laptop) {
+    	background-color: $light;
+    }
+}
+
+span.select {
+	position: relative;
+	&:after {
+		@include iconfont;
+		content: "\e606";
+		background-color: $primary;
+		color: $light;
+		@include transform(rotate(-90deg));
+		display: inline-block;
+		height: $select-height;
+		width: $select-height;
+		position: absolute;
+		top:0;
+		right: 0;
+		pointer-events: none;
+		text-align: center;
+		font-size: $fs4;
+	}
+}
+
+input:focus, 
+textarea:focus, 
+select:focus {
+	box-shadow: 0 0 2px $primary;
+	border: 1px solid $primary;
+	outline: none;
+}

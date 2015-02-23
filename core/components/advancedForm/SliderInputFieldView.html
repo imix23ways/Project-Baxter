@@ -1,0 +1,17 @@
+<div class="slider-input-container advanceFormItem">
+	<div class="label-container">
+		<label for="<%=label%>"><%=label%>
+		<%	if (required == true) { %>
+			<span class="required-footnote">*</span>
+		<% } %>
+		</label>
+	</div>
+	<div class="input-container">
+		<div class="slider-container">
+			<div class="slider-bar"></div>
+		</div>
+		<div class="field-container">
+			<input class="sliderValue" type="text" name="<%=name%>" value="<%=value%>"/>
+		</div>
+	</div>
+</div>

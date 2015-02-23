@@ -1,0 +1,33 @@
+/*---------------------Data Count Down Widget Styles----------------------*/
+
+
+.dateCountDown-container {
+	.figure {
+		font-size: $fs6;
+		@include interactivetext;
+		display: block;
+	}
+	label {
+		@include chartlabel;
+		display: block;
+	}
+	.date-container {
+		.date-month {
+			float: left;
+			margin-right: 10px;
+			padding: 3px;
+		}
+		.date-year {
+			float: left;
+		}
+		.OK-button {
+			float: left;
+			margin-left: 8px;
+		}
+	}
+	.error-message {
+		display: none;
+		color: red;
+		font-size: 12px;
+	}
+}

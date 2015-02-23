@@ -1,0 +1,56 @@
+/* The colors */
+
+// Greyscale
+$white: #fff;
+$black: #1a1b1f;
+$dryclay: #efeae8;
+$wetclay: #e3e1de;
+$fog: #e0e0e0;
+$storm: #999999;
+$rancho: #1d5424;
+
+// Primaries
+$basetheme: #5bbe90;
+$monk: #e09027;
+$bullseye: #da3327;
+
+// For charting
+$pond: #5ed3cd;
+$clownblood: #fe46c0;
+$electricblue: #00aff4;
+$plum: #6b3275;
+$summer: #b9d835;
+$spring: #62dd68;
+$evergreen: #01403d;
+$mellow: #e8de25;
+$plasticjade: #00827e;
+
+
+/* The variables for use in widget's & themes (go ahread and use) */
+
+// Type & fills
+$dark: $rancho;
+$background: $dryclay;
+$light: $white;
+
+// Active & notifications
+$notification: $basetheme;
+$warning: $monk;
+$error: $bullseye;
+
+// Interactive elements
+$primary: $basetheme;
+$primary-hover: lighten( $basetheme, 6.5 );
+$primary-active: darken( $basetheme, 7.5 );
+
+$primary-selected: darken( $basetheme, 13 );
+$primary-selected-hover: darken( $basetheme, 6.5 );
+$primary-selected-active: darken( $basetheme, 19.5 );
+
+$inactive: $wetclay;
+
+$neutral: $fog;
+$neutral-hover: lighten( $fog, 5.5 );
+$neutral-active: darken( $fog, 5.5 );
+
+

@@ -1,0 +1,6 @@
+<tr class="grid-row">
+	<% i=0; 
+	_.each(row, function(row){ %>
+            <td class="grid-cell grid-col-<%=categories[i++].category.replace(' ','') %>" width="<%= _.escape(cellWidth) %>%"><%= row %></td>
+    <% }); %>
+</tr>

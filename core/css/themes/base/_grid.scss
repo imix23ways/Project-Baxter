@@ -1,0 +1,63 @@
+/* Responsive settings for the grid container. 
+@media mixins are defined in _grid-settings.scss. This file is kept seperate to call it after plugins/neat.
+Here we define width of the content column in different responsive states. */
+
+
+// This mimimcs @outer-container defined in neat/grid/outer-container. Here we include responsive states. 
+// TODO: pass responsive states as variables to mixin. 
+// TOTRY: derive column width from responsive breakpoints defined in _grid-settings.scss
+@mixin responsive-container() {
+	padding: {
+		left: 1rem;
+		right: 1rem;
+	}
+	@include clearfix;
+	@include media($Tablet) {}
+	@include media($Laptop) {
+		width: 935px;
+		width: 90%; //
+		margin: {
+			left: auto;
+			right: auto;
+		}
+	}
+	@include media($HighDef) {width: 1163px}
+	@include media($WQHD) {width: 1860px}
+}
+
+// Use the responsive-container() mixin 
+.grid-container {
+	@include responsive-container();
+}
+
+// Shows elements on specific media-querys. For internal use only.
+// #TODO: rewrite as a global mixin that accepts the $query variable.
+
+@mixin show-media-Mobile() {
+	display: inherit !important;
+	@include media($Tablet) { display: none !important; }
+}
+
+@mixin show-media-Tablet() {
+	display: none !important;
+	@include media($Tablet) { display: block !important; }
+	@include media($Laptop) { display: none !important; }
+}
+
+@mixin show-media-Laptop() {
+	display: none !important;
+	@include media($Laptop) { display: block !important; }
+	@include media($HighDef) { display: none !important; }
+}
+
+@mixin show-media-HighDef() {
+	display: none !important;
+	@include media($HighDef) { display: block !important; }
+	@include media($WQHD) { display: none !important; }
+}
+
+@mixin show-media-WQHD() {
+	display: none !important;
+	@include media($WQHD) { display: block !important; }
+}
+

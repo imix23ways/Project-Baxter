@@ -1,0 +1,11 @@
+/* ----- Section header styles ----- */
+
+.sectionheader {
+	background-color: $black;
+	clear: both;
+	padding: 1rem;
+	@include media($Laptop) {
+		background-color: transparent;
+		border-bottom: .1rem solid $black; 
+	}
+}

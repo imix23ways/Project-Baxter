@@ -1,0 +1,96 @@
+/* Variables */
+$cell-padding: 10px;
+
+/* ----- Datagrid styles ----- */
+.datagrid {
+    width: 100%;
+    border-collapse: separate;
+}
+
+.grid-header {
+    height: 30px;
+    color: $light;
+    background: $primary;
+}
+
+.grid-header-cell {
+    padding: $cell-padding;
+
+    .sortableImgDiv {
+		float: right;
+		width: 20%;
+		&:after {
+			content: "\e619";
+			@include iconfont;
+		}
+	}
+
+	.grid-header-cell-label {
+		float: left;
+		width: 80%;
+	}
+}
+
+.grid-footer {
+    width: 100%;
+    
+	.grid-footer-text-div {
+		float: left;
+	}
+
+	.grid-footer-paginate-div {
+		float: right;
+	}
+	
+	.paginate-prev {
+			display: block;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			background: url("../../core/images/back_arrow.png") no-repeat;
+			width: 19px; /* Width of image */
+			height: 19px; 
+			padding-left: 19px; /* Width of image */	
+	}
+	
+	.paginate-next {
+			display: block;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			background: url("../../core/images/forward_arrow.png") no-repeat;
+			width: 19px; /* Width of image */
+			height: 19px; 
+			padding-left: 19px; /* Width of image */	
+	}
+	
+	.paginationNumberDiv {
+		width: 12px;
+		height: 12px;
+		float: left;
+		padding: 3px 1px 2px 2px;
+		cursor: pointer;
+	}
+	
+	.currentPaginationNumberDiv {
+		width: 12px;
+		height: 12px;
+		float: left;
+		padding: 3px 1px 2px 2px;
+	}
+    
+}
+
+.grid-footer-cell {
+    padding: $cell-padding;
+}
+
+.grid-row {
+    height: 20px;
+}
+
+.grid-row:hover {
+    background-color: lighten($inactive, 25);
+}
+
+.grid-cell {
+    padding: $cell-padding;
+}

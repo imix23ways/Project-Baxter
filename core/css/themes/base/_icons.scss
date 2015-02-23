@@ -1,0 +1,154 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('themes/base/fonts/icomoon.eot?-pyg4zg');
+	src:url('themes/base/fonts/icomoon.eot?#iefix-pyg4zg') format('embedded-opentype'),
+		//url('themes/base/fonts/icomoon.woff?-pyg4zg') format('woff'),
+		url('themes/base/fonts/icomoon.ttf?-pyg4zg') format('truetype'),
+		url('themes/base/fonts/icomoon.svg?-pyg4zg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@mixin iconfont {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+}
+
+[class^="ico-"], [class*=" ico-"] {
+	@include iconfont;
+}
+
+.ico-advice:before {
+	content: "\e600";
+}
+
+.ico-alerts:before {
+	content: "\e601";
+}
+
+.ico-api:before {
+	content: "\e602";
+}
+
+.ico-arrow:before {
+	content: "\e603";
+}
+
+.ico-book:before {
+	content: "\e604";
+}
+
+.ico-calc:before {
+	content: "\e605";
+}
+
+.ico-caret:before {
+	content: "\e606";
+}
+
+.ico-check:before {
+	content: "\e607";
+}
+
+.ico-clipboard:before {
+	content: "\e608";
+}
+
+.ico-cloud:before {
+	content: "\e609";
+}
+
+.ico-doughnut:before {
+	content: "\e60a";
+}
+
+.ico-gauge:before {
+	content: "\e60b";
+}
+
+.ico-gear:before {
+	content: "\e60c";
+}
+
+.ico-goal:before {
+	content: "\e60d";
+}
+
+.ico-goalgami:before {
+	content: "\e60e";
+}
+
+.ico-hamburger:before {
+	content: "\e60f";
+}
+
+.ico-menuscrub:before {
+	content: "\e610";
+}
+
+.ico-minus:before {
+	content: "\e611";
+}
+
+.ico-page:before {
+	content: "\e612";
+}
+
+.ico-pencil:before {
+	content: "\e613";
+}
+
+.ico-plus:before {
+	content: "\e614";
+}
+
+.ico-rebal:before {
+	content: "\e615";
+}
+
+.ico-sorted:before {
+	content: "\e616";
+}
+
+.ico-star:before {
+	content: "\e617";
+}
+
+.ico-suitcase:before {
+	content: "\e618";
+}
+
+.ico-unsorted:before {
+	content: "\e619";
+}
+
+.ico-wallet:before {
+	content: "\e61a";
+}
+
+.ico-x:before {
+	content: "\e61b";
+}
+
+
+
+/* == Logo == */
+i {
+	background-repeat: no-repeat;
+}
+
+i.logo {
+	background-image: url('../images/logo.svg');
+	background-size: contain;
+	background-position: 50%;
+}

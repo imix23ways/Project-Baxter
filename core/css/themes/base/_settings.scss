@@ -1,0 +1,73 @@
+/* === Widths, heights, & margins === */
+
+// Borders
+$border-radius: 3px;
+$linethickness: 2px;
+
+// Nav menu
+$nav-width: 10rem;
+$menu-left-padding: 54px;
+$menuheader-height: 2rem;
+$menuheader-color: $primary;
+
+// The primary canvas color
+body {
+	background-color: $background;
+	padding-bottom: 50px;
+}
+
+// widget background & footer styles
+section.widget {
+
+	> div {
+		background-color: $light;
+		border-bottom: 10px solid $neutral;
+		border-radius: 0 0 10px 10px;
+		@include media($Laptop) {
+			background-color: transparent;
+			border-bottom: none;
+		}
+		&:last-child:after {
+			content: '';
+			clear: both;
+			display: block;
+		}
+	}
+
+	h2 {
+		margin-bottom: 0;
+		margin-top: 23px;
+		padding: 14px 24px;
+		@include media($Laptop) {
+			padding-left: 0;
+		}
+	}
+
+	.widget-footer {
+		border-top: $linethickness solid $inactive;
+		margin-right: 15px;
+		margin-left: 15px;
+		margin-top: 15px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		@include flexbox;
+		@include justify-content(center);
+	}
+}
+
+// The Total Amount Widget Area
+section.widget.totalamount > div {
+	background-color: transparent;
+	border-bottom: none;
+	> div {
+		@include flexbox;
+		@include flexdirection(column-reverse);
+		@include media($Tablet) {
+			@include flexdirection(row);
+			@include alignitems(flex-end);
+		}
+	}
+}
+
+
+

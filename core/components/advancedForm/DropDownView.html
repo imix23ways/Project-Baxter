@@ -1,0 +1,27 @@
+<div class="dropdown-view-container advanceFormItem">
+	<div class="label-container">
+		<label for="<%=label%>"><%=label%>
+		<%	if (required == true) { %>
+			<span class="required-footnote">*</span>
+		<% } %>
+		</label>
+	</div>
+	<div class="dropdown-container">
+		<select name="<%=name%>">
+			<% 
+			for(i=0; i<options.length; i++) {
+				var option = options[i];
+				if (option.isSelected != undefined && option.isSelected == true) {
+				%>
+				<option value="<%=option.option %>" selected><%=option.option %></option>
+				<%
+				} else {
+				%>
+				<option value="<%=option.option %>"><%=option.option %></option>
+				<%}
+			}
+			%>
+		</select> 
+	</div>
+	
+</div>

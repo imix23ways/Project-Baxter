@@ -1,0 +1,20 @@
+//Imports normalize. http://necolas.github.io/normalize.css/
+@import "plugins/normalize";
+
+//Import jQueryUI
+@import "plugins/jquery-ui";
+
+//Imports Bourbon & Neat
+@import "plugins/bourbon/bourbon";
+@import "plugins/grid-settings";
+@import "plugins/neat/neat";
+
+//Mixins
+@import "mixins.scss";
+
+//Imports the base theme
+@import "themes/base/base";
+
+//Imports widgets and component default styles
+@import "components/components";
+@import "widgets/widgets";

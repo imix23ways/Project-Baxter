@@ -1,0 +1,98 @@
+// Import fonts
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400);
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+
+// Root Element Size
+html {
+	font-size: 26px;
+}
+
+/* === Variables & mixins === */
+
+// Font Size
+$fs1: .42rem;
+$fs2: .56rem;
+$fs3: .62rem;
+$fs4: .72rem;
+$fs5: .82rem;
+$fs6: 1.12rem;
+$fs7: 1.72rem;
+
+// Font Family
+$workhorse: "Source Sans Pro", "Helvetica", sans-serif;
+$showpony: "Raleway", "Georgia", serif;
+
+// Font Weight
+$fwlight: 300;
+$fwregular: 400;
+
+// Mixins
+@mixin base-type {
+	font-family: $workhorse;
+	font-weight: $fwregular;
+	color: $dark;
+	font-size: $fs3;
+}
+
+@mixin headers-type {
+	font-family: $showpony;
+	font-size: $fs4;
+	color: $light;
+	font-weight: normal;
+	@include media($Laptop) {
+		color: $dark;
+		font-size: $fs6;
+	}
+}
+
+@mixin link-type {
+	color: $light;
+	text-decoration: none;
+	&:hover {
+		color: $primary-hover;
+	}
+}
+
+@mixin chartlabel {
+	font-size: $fs2 !important;
+	font-weight: $fwlight !important;
+	color: $dark !important;
+	font-family: $workhorse;
+}
+
+@mixin interactivetext {
+	border-left: 5px solid $primary;
+	padding-left: 5px;
+}
+
+
+
+/* === Global Elements === */
+body {
+	@include base-type;
+}
+
+h2 {
+	@include headers-type;
+}
+
+.highcharts-axis-labels text {
+	@include chartlabel;
+}
+
+/* === Special Cases === */
+
+.totalamount {
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+	.fp-label {
+		@include headers-type;
+		color: $dark;
+		font-size: $fs6;
+		line-height: $fs6;
+	}
+	.fp-figure {
+		font-size: $fs7;
+		line-height: $fs7;
+	}
+}

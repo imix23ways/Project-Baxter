@@ -1,0 +1,125 @@
+/* ----- Menu bar styles ----- */
+
+.app-nav-header {
+	height: $menuheader-height;
+	background-color: $menuheader-color;
+	z-index: 2;
+	position: relative;
+	@include flexbox();
+	@include alignitems(center);
+	@include headers-type;
+
+	&:active {
+		background-color: $primary-active;
+	}
+
+	i {
+		width: $menuheader-height;
+		height: $menuheader-height;
+		font-size: 160%;
+		text-align: center;
+		margin-right: .5rem;
+		
+		&:before {
+			vertical-align: -31%;
+		}
+	}
+
+	&.open i {
+		background-color: $primary-selected;
+	}
+
+	@include media($Laptop) {
+		display: none;
+	}
+
+}
+
+.menu_bar {
+	position: fixed;
+	z-index: 1;
+	background-color: $dark;
+	top: 0;
+	left: -100%;
+	width: 80%;
+	margin-right: 20%;
+	bottom: 0;
+	transition: 125ms left ease-in;
+	padding-top: 2rem;
+
+	&.open { // expanded state
+		left: 0;
+		transition: 75ms left ease-in;
+	}
+
+	@include media($Tablet) {
+		width: 35%;
+	}
+	
+	@include media($Laptop) {
+		width: $nav-width;
+		height: 100%;
+		left: 0;
+		padding-top: 1rem;
+	}
+
+	a { 
+		@include link-type;
+		font-size: $fs5;
+		padding: 22px 0 22px $menu-left-padding;
+		display: block;
+		@include media($Laptop) {
+			font-size: $fs4;
+		}
+		i {
+			font-size: 115%;
+			margin-right: .1rem;
+			position: relative;
+			top: .08rem;
+		}
+	}
+
+	i.logo {
+		display: block;
+		padding-bottom: 50%;
+		margin-left: $menu-left-padding;
+		margin-right: 1.3*$menu-left-padding;
+		max-width: 8rem;
+	}
+
+	&:after {
+		height: 100%;
+		width: 25%;
+		margin-right: -25%;
+		background-color: transparentize($dark, .75);
+		position: absolute;
+		top: 0;
+		right: 0;
+		display: block;
+			
+		content: "\e610";
+		font-family: 'icomoon';
+		speak: none;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		line-height: 1;
+
+		/* Better Font Rendering =========== */
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+
+		font-size: 3rem;
+		padding-top: 100%;
+		text-indent: -.8rem;
+
+		@include media($Laptop) {
+			display: none;
+		}
+
+	}
+
+}
+
+

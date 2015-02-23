@@ -1,0 +1,24 @@
+/*------------FeesTable Widget Styles---------------*/
+
+.feesTableContainer {
+
+	.grid-header {
+		background-color: $storm;
+	}
+
+	.timeFrameContainer {
+		width: auto;
+		height: 30px;
+		
+		.timeFrameDropdown {
+			float: left;
+		}
+		.timeFrameLabel {
+			float: left;
+			margin-left: 5px;
+		}
+	}
+	.feesTableDataGrid {
+
+	}
+}

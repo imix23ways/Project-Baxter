@@ -1,0 +1,10 @@
+//This file must be imported before bourbon neat.
+
+@import "neat/neat-helpers";
+
+// Define your breakpoints. Mobile first so we don't define that one. See http://thoughtbot.github.io/neat-docs/latest/#new-breakpoint
+$default-feature: min-width;
+$Tablet: new-breakpoint(641px);
+$Laptop: new-breakpoint(1025px);
+$HighDef: new-breakpoint(1441px);
+$WQHD: new-breakpoint(1921px);

@@ -1,0 +1,22 @@
+/*-------------------Alert widge styles--------------*/
+
+.alert-content {
+	background-color: #ddd;
+	overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.alert-close {
+	background-color: white;
+	padding: 0 4px 0 4px;
+	margin: 4px;
+	float: left;
+	height: auto;
+}
+
+.alert-text {
+	float: left;
+	margin: 4px;
+	height: auto;
+}

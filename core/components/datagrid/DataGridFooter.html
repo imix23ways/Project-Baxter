@@ -1,0 +1,19 @@
+<tr>
+	<td class="grid-footer-cell grid-footer" colspan="<%= catLength %>">
+		<div class="grid-footer-text-div" >Showing <%= startIndex %> to <%= endIndex %> of <%= gridDataLength %> items</div>
+		<div class="grid-footer-paginate-div">
+			<img class="paginate-prev" style="float: left">
+				<%
+				for (var i=startPageNumber; i < endPageNumber; i++) { %>
+					<% if (currentPageNumber == (i+1)) { %>
+						<div class="currentPaginationNumberDiv"> <%= i+1 %></div>
+					<% } else { %>
+						<div class="paginationNumberDiv"> <%= i+1 %></div>
+					<%
+					}
+				 } %>
+			<img class="paginate-next" style="float: left">
+		</div>
+	</td>
+</tr>
+

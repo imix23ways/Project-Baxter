@@ -1,0 +1,6 @@
+// Nav
+body {
+	@include media($Laptop) {
+		margin-left: $nav-width; // pushes center column so it isn't overtaken by nav.
+	}
+}

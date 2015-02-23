@@ -1,0 +1,9 @@
+<div class="sidebar-item main-item toogleSubItems" id="sb_item<%= itemNumber %>">
+	<div class="align-vertical"><div>
+		<% if(itemPath != null && itemPath != '') { %>
+			<a href="<%= itemPath %>"><%= menuItem %></a>
+		<% } else { %>
+		<%= menuItem %>
+		<% } %>
+	</div></div>
+</div>

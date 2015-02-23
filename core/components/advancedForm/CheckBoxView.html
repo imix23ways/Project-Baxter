@@ -1,0 +1,21 @@
+<div class="checkBox-view-container advanceFormItem">
+	<div class="label-container">
+		<label for="<%=label%>"><%=label%>
+		<%	if (required == true) { %>
+			<span class="required-footnote">*</span>
+		<% } %>
+		</label>
+	</div>
+	<div class="field-container">
+		<% for(i=0; i<options.length; i++) { 
+			var option = options[i];
+		%>
+		<div class="checkBox-options">
+			<input type="checkbox" name="<%=name%>" value="<%=option.optionValue%>"
+			<% if (option.isSelected == true) { %> checked="checked" <% } %> />
+			<%= option.optionLabel %>
+		</div>
+		<% } %>
+	</div>
+	
+</div>
